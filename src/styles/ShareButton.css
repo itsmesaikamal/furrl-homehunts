@@ -1,0 +1,10 @@
+/* src/styles/ShareButton.css */
+.share-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

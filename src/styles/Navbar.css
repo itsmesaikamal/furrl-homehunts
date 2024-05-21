@@ -1,0 +1,24 @@
+/* src/styles/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar-icon {
+    font-size: 18px;
+    text-decoration: none;
+  }
+  

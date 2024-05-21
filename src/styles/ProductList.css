@@ -1,0 +1,141 @@
+.homepage-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+  gap: 20px;
+  padding: 10px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  max-height: 300px; /* Set a max height for the container */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.product-item img {
+  width: 100%;
+  max-width: 100%; /* Ensure images take full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set a max height for the image */
+  object-fit: cover; /* Ensure image covers the container without distortion */
+  border-bottom: 1px solid #ddd;
+}
+
+.product-details {
+  padding: 10px;
+  flex: 1; /* Allow the details section to grow */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.product-details h3 {
+  margin: 0;
+  font-size: 16px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.product-description {
+  margin: 5px 0;
+  color: #888;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.product-price .mrp {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.product-price .price {
+  font-weight: bold;
+}
+
+.product-brand {
+  color: #555;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row for mobile devices */
+  }
+}
+.product-item {
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  display: block;
+}
+
+.share-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.filter-button {
+  background-color: white;
+  color: black;
+  width: 100px; /* Adjusted to make the buttons more readable */
+  height: 40px;
+  border-radius: 18px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px; /* Adjusted font size for better readability */
+}
+
+.filter-button:hover {
+  background-color: #f0f0f0; /* Optional: Add a hover effect */
+}
+
+.sideheading{
+size: 20px;
+}
+
